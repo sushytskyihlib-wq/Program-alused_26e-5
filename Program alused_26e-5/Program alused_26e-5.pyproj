@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1640d190-49f0-4027-bc1d-47b957c4bfb9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Too_1.1.py</StartupFile>
+    <StartupFile>töö1_3.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="Program_alused_26e_5.py" />
     <Compile Include="Too_1.1.py" />
+    <Compile Include="töö1_3.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

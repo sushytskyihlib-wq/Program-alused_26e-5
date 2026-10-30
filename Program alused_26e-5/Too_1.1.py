@@ -62,3 +62,5 @@ try:
     print("Jääk:", summa % jagaja)
 except ValueError:
     print("kontrollige sisendused")
+
+    print("")

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1640d190-49f0-4027-bc1d-47b957c4bfb9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>töö2.py</StartupFile>
+    <StartupFile>too2_1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Program_alused_26e_5.py" />
+    <Compile Include="too2_1.py" />
     <Compile Include="Too_1.1.py" />
     <Compile Include="töö1_3.py" />
     <Compile Include="töö2.py" />

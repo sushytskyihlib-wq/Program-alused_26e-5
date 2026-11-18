@@ -1,5 +1,6 @@
 from random import*
 from math import*
+from datetime import*
 # nimi=(input("Mis on sinu nimi?: "))
 # if nimi.upper()=="JUKU":
 #     print("Lähme Jukuga kinno!")
@@ -163,16 +164,64 @@ from math import*
 # print("--------------")
 # print(arve)
 #ülesanne9
+# try:
+#     arv_1=float(input("Kirjutage eesimene arv: "))
+#     arv_2=float(input("Kirjutage teine arv: "))
+#     arv_3=float(input("Kirjutage kolmas arv: "))
+#     arv_4=float(input("Kirjutage neljas arv: "))
+#     if 0<arv_1 and 0<arv_2 and 0<arv_3 and 0<arv_4: 
+#         if arv_1==arv_2==arv_3==arv_4:
+#             ruut=arv_1*arv_2*arv_3*arv_4
+#         print(f"see on ruutu {ruut} diagonaal")
+#     else:
+#         print("see on ristkülik ")
+# except ValueError:
+#     print("kontrollige arv")
+
+# try:
+#     tegimine=["+","-","*","/"]
+#     arv_1=float(input("Sisenda oma esimene arv: "))
+#     arv_2=float(input("Sisenda oma teine arv: "))
+#     print("Mis tegevus tetahate tegema?")
+#     tegevus=(input("Sisenda tegevus: "))
+#     if tegevus in tegimine :
+#         print(f"{arv_1} {tegevus} {arv_2}={eval(f'{arv_1} {tegevus} {arv_2}')}")
+# except ValueError:
+#     print("Muutuge arv!")
+# except ZeroDivisionError:
+#     print("sa ei saa nulli jagada")
+
+# date.today().year
+# aastat=int(input("mis aasta sa oled sundinud?: "))
+
+
+# try:
+#     hind=float(input("Sisenda on hind: "))
+#     if 0> hind <= 10:
+#         print("Allahindlus 10%")
+#         odavhind=round(hind*0,1 ,2)
+#         summa=hind-odavhind
+#     else:
+#         print("Allahindlust pole")
+#     if hind > 10:
+#         print("Allahindlus 20%")
+#         odavhind=round(hind*0,2 ,2)
+#         summa=hind-odavhind
+#     else:
+#         print("Allahindlust pole")
+# except ValueError:
+#     print("kontrolige arv ")
+
+#ülesanne14
 try:
-    arv_1=float(input("Kirjutage eesimene arv: "))
-    arv_2=float(input("Kirjutage teine arv: "))
-    arv_3=float(input("Kirjutage kolmas arv: "))
-    arv_4=float(input("Kirjutage neljas arv: "))
-    if 0<arv_1 and 0<arv_2 and 0<arv_3 and 0<arv_4: 
-        if arv_1==arv_2==arv_3==arv_4:
-            ruut=arv_1*arv_2*arv_3*arv_4
-        print(f"see on ruutu {ruut} diagonaal")
+    inimesed=int(input("Sisenda kui palju inimesi on olemas: "))
+    isted=int(input("Sisenda kui palju isted on olemas: "))
+    if inimesed > 0 and isted > 0:
+        buss=inimesed//isted
+        print(f"meil on {buss} bussi")
+        vimane_buss=inimesed % isted
+        print(f"meil on {vimane_buss} inimesi vimasel bussil")
     else:
-        print("see on ristkülik ")
+        print("kirjuta positiivne arv: ")
 except ValueError:
-    print("kontrollige arv")
+    print("kirjuta ainult numbrit")

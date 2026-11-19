@@ -61,3 +61,112 @@ tund=kõik_minuted//60
 minuted=kõik_minuted%60
 print(f"see on {tund} tund ja {minuted} min ")
 
+
+
+# Loo uus projekt.
+# Kopeeri antud kood failisse.
+# Otsi ja paranda programmis vead.
+# Lisa kommentaar, kus kirjelda, mis parandatud oli.
+
+# Kood:
+
+# print('Arvu kontroll")
+# arv=input("Sisesta täisarv => ")
+# if arv>0
+#     print("Arv on positiivne")
+# else if arv=0:
+#     print("Arv on null")
+# else:
+# print("Arv on negatiivne")
+# if arv%2==0:
+#     print("Arv on paarisarv")
+# else:
+#     print("Arv on paaritu")
+# print()
+# print("Kehamassiindeks")
+# mass=float(input("Sisesta kaal (kg) => "))
+# pikkus=float(input("Sisesta pikkus (m) => ")
+# kmi=mass/pikkus*2
+# print("KMI:", round(kmi,1))
+# if kmi<18.5:
+#     print("Alakaal")
+# elif kmi>=18.5:
+#     print("Normaalkaal")
+# elif kmi>=25:
+#     print("Ülekaal")
+# elif kmi>=30
+#     print("Rasvumine")
+# print()
+# print("Ostu allahindlus")
+# summa=float(input("Sisesta ostusumma => "))
+# if summa=<0:
+#     print("Vigane summa")
+# elif summa>100 or summa<=500:
+#     print("Allahindlus 5%, maksta:", round(summa*0.95,2))
+# elif summa>500:
+#     print("Allahindlus 10%, maksta:", round(summa*0.9,2))
+# else
+#     print("Allahindlust pole, maksta:", summa
+# Programmi tulemus:
+
+ 
+# Arvu kontroll
+# Sisesta täisarv => 9
+# Arv on positiivne
+# Arv on paaritu
+
+# Kehamassiindeks
+# Sisesta kaal (kg) => 85
+# Sisesta pikkus (m) => 1.75
+# KMI: 27.8
+# Ülekaal
+
+# Ostu allahindlus
+# Sisesta ostusumma => 650
+# Allahindlus 10%, maksta: 585.0
+# Lisaülesanne:
+
+# Muuda programmi nii, et alguses kuvatakse menüü ja kasutaja valib, millist osa käivitada:
+ 
+# Vali programm:
+# 1 - Arvu kontroll
+# 2 - Kehamassiindeks
+# 3 - Ostu allahindlus
+# Sisesta valik (1-3) =>
+# Käivitub ainult valitud osa. Kui kasutaja sisestab midagi muud kui 1, 2 või 3, kuvatakse teade Vigane valik.
+
+# Lisa arvu kontrolli osasse kontroll, kas arv jagub 3-ga.
+# Kehamassiindeksi osa ei tohi lubada sisestada nulli või negatiivset kaalu või pikkust.
+# Lisaülesande tulemus (näide):
+
+ 
+# Vali programm:
+# 1 - Arvu kontroll
+# 2 - Kehamassiindeks
+# 3 - Ostu allahindlus
+# Sisesta valik (1-3) => 1
+# Arvu kontroll
+# Sisesta täisarv => 9
+# Arv on positiivne
+# Arv on paaritu
+# Arv jagub 3-ga
+# Töö esitamine
+
+# Salvesta projekt GitHubi. Visual Studios vali Git → Create Git Repository, logi sisse oma GitHubi kontoga ja vajuta Create and Push.
+# ⚠️ Eemalda linnuke kastist Private repository, sest muidu õpetaja sinu tööd ei näe.
+# Kontrolli, et kood on GitHubis. Ava brauseris oma repositoorium ja veendu, et seal on sinu .py fail, mitte ainult .gitignore ja .gitattributes.
+# Kopeeri link aadressiribalt. Kui repositoorium on brauseris avatud, kopeeri aadress brauseri ülevalt aadressiribalt. Näiteks:
+# https://github.com/kasutajanimi/Hindeline-too
+# Lisa link Moodle’isse. Vajuta selles ülesandes Lisa esitus, kleebi link tekstikasti ja vajuta Salvesta muudatused.
+# Hindamine:
+
+# Kriteerium	Punktid
+# Aastaaeg	15
+# Kiiruse kontroll	15
+# Taksosõit	15
+# Kommentaarid	10
+# try/except	15
+# Lisa 1: menüü	10
+# Lisa 2: allahindlus	10
+# Lisa 3: negatiivne kiirus	10
+# Kokku	100

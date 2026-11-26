@@ -1,9 +1,9 @@
-from math import e
+from math import *
 
 
 while True:
-     print("Vali ülesanne 1,2,3,4,5,6,7")
-     valik=input("Sisenda arv(1-7): ")
+     print("Vali ülesanne 1,2,3,4,5,6,7,8")
+     valik=input("Sisenda arv(1-8): ")
      if valik=='1':
         i=0
         kogus=0
@@ -50,12 +50,12 @@ while True:
             print("summa: ",summa)
         except ValueError:
             print("Palun sisenda kehtiv täisarv")
-
+     elif valik=='6':
         i=float(input("Sisenda kui plju aega: "))
         arv=float(input("Sisenda kui palju euro te panite: "))
         if i>0 and arv>0:
-            protsent=arv*0,03
-     elif valik=='6':
+            print(f"{arv*(1.03)**i}, summa on aastat") # 6 on tehtud iseseisev
+     elif valik=='7':
          pos_kogus=0
          neg_kogus=0
          null_kogus=0
@@ -85,7 +85,7 @@ while True:
          print(f"Negatiivne arvude kogus: {neg_kogus}")
          print(f"Positiivne arvude kogus: {pos_kogus}")
          print(f"Null {null_kogus} korda")
-     elif valik=='7':
+     elif valik=='8':
          while True:
              try:
                  A=int(input("Sisenda A arv: "))
@@ -101,5 +101,14 @@ while True:
          for i in range(A,B+1):
              if i % K == 0:
                  print(i)
+     elif valik=='9':
+         for i in range(10):
+            try:
+                arv=int(input(f"{i+1}. arv: "))
+                if arv<0:
+                    vastus=arv*(-1)
+                    print
+            except ValueError:
+                print("")
      else :
         print("Viga: ")

@@ -2,8 +2,8 @@ from math import *
 
 
 while True:
-     print("Vali ülesanne 1,2,3,4,5,6,7,8")
-     valik=input("Sisenda arv(1-8): ")
+     print("Vali ülesanne 1,2,3,4,5,6,7,8,9,10,11")
+     valik=input("Sisenda arv(1-11): ")
      if valik=='1':
         i=0
         kogus=0
@@ -54,7 +54,7 @@ while True:
         i=float(input("Sisenda kui plju aega: "))
         arv=float(input("Sisenda kui palju euro te panite: "))
         if i>0 and arv>0:
-            print(f"{arv*(1.03)**i}, summa on aastat") # 6 on tehtud iseseisev
+            print(f"{arv*(1.03)**i}, summa on aastat") # 6 on tehtud iseseisevalt
      elif valik=='7':
          pos_kogus=0
          neg_kogus=0
@@ -102,13 +102,29 @@ while True:
              if i % K == 0:
                  print(i)
      elif valik=='9':
+            vastus=""
+            for i in range(10):
+                try:
+                    arv=int(input(f"{i + 1}. arv: "))
+                    if arv<0:
+                        arv=arv*-1
+                    vastus+=f"{arv}, "
+                except ValueError:
+                    print("palun sisesta arv")
+                print("arvud olid", vastus) #ülesanne 9 iseseisev töö moodles number 21
+     elif valik=='10':
+         arv=["0","1","2","3","4","5","6","7","8","9","10"]
          for i in range(10):
-            try:
-                arv=int(input(f"{i+1}. arv: "))
-                if arv<0:
-                    vastus=arv*(-1)
-                    print
-            except ValueError:
-                print("")
-     else :
-        print("Viga: ")
+            print(f"{i+1}")
+            print(arv)# ülesanne 10 moodles on ülesannne 15 on kirjutatud iseseisvalt
+     elif valik=='11':
+         try:
+             arv=float(input("Sisenda kui palju düüimin on olemas: "))
+             arv>0
+             tabel=arv*2.5
+             print(f"{arv} düimid on {tabel} santimetrid")
+         except ValueError:
+             print("Ei saa veiksem kui null")# ülesanne 11 moodles on ülesanne 8 on kirjutatud iseseisvalt
+     else:
+        print("Viga: kirjuta numbrid 1-10")
+
